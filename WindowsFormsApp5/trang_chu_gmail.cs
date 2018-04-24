@@ -81,7 +81,7 @@ namespace WindowsFormsApp5
                     demSoLanGuiEmail++;
                     count = 0;
                     /// Coi nhu su kien bam nut da xay ra, thuc hien luon viec gui email
-                    button1_Click(null, null);
+                    buttonSend_Click(null, null);
                 }
 
 
@@ -95,7 +95,7 @@ namespace WindowsFormsApp5
                         timer1.Stop();
                         count = 0;
                         demSoLanGuiEmail++;
-                    button1_Click(null, null);
+                    buttonSend_Click(null, null);
                     }
                     
                }
@@ -109,7 +109,7 @@ namespace WindowsFormsApp5
                     timer1.Stop();
                     count = 0;
                     demSoLanGuiEmail++;
-                    button1_Click(null, null);
+                    buttonSend_Click(null, null);
 
                 }
 
@@ -122,7 +122,7 @@ namespace WindowsFormsApp5
                     timer1.Stop();
                     count = 0;
                     demSoLanGuiEmail++;
-                    button1_Click(null, null);
+                    buttonSend_Click(null, null);
 
                 }
 
@@ -135,7 +135,7 @@ namespace WindowsFormsApp5
                     timer1.Stop();
                     count = 0;
                     demSoLanGuiEmail++;
-                    button1_Click(null, null);
+                    buttonSend_Click(null, null);
 
                 }
             }
@@ -147,7 +147,7 @@ namespace WindowsFormsApp5
                     timer1.Stop();
                     count = 0;
                     demSoLanGuiEmail++;
-                    button1_Click(null, null);
+                    buttonSend_Click(null, null);
 
                 }
             }
@@ -165,7 +165,7 @@ namespace WindowsFormsApp5
 
        // su kien gui mail
        
-        private void button1_Click(object sender, EventArgs e)
+        private void buttonSend_Click(object sender, EventArgs e)
         {
             MailMessage mail = new MailMessage(from.Text, to.Text, subject.Text, body.Text);
             SmtpClient client = new SmtpClient(smtp.Text);
@@ -215,7 +215,7 @@ namespace WindowsFormsApp5
             ColorDialog dlg = new ColorDialog();
             if(dlg.ShowDialog() ==DialogResult.OK)
             {
-                button1.ForeColor = dlg.Color;
+                buttonSend.ForeColor = dlg.Color;
                 button2.ForeColor = dlg.Color;
             }
         }
@@ -225,7 +225,7 @@ namespace WindowsFormsApp5
             ColorDialog dlg = new ColorDialog();
             if (dlg.ShowDialog() == DialogResult.OK)
             {
-                button1.BackColor = dlg.Color;
+                buttonSend.BackColor = dlg.Color;
                 button2.ForeColor = dlg.Color;
 
             }
@@ -296,7 +296,7 @@ namespace WindowsFormsApp5
                     timer1.Stop();
                     count = 0;
                     demSoLanGuiEmail++;
-                    button1_Click(null, null);
+                    buttonSend_Click(null, null);
                     
                 }
 
@@ -309,7 +309,7 @@ namespace WindowsFormsApp5
                     timer1.Stop();
                     count = 0;
                     demSoLanGuiEmail++;
-                    button1_Click(null, null);
+                    buttonSend_Click(null, null);
                    
                 }
 
@@ -322,7 +322,7 @@ namespace WindowsFormsApp5
                     timer1.Stop();
                     count = 0;
                     demSoLanGuiEmail++;
-                    button1_Click(null, null);
+                    buttonSend_Click(null, null);
                     
                 }
             }
@@ -334,7 +334,7 @@ namespace WindowsFormsApp5
                     timer1.Stop();
                     count = 0;
                     demSoLanGuiEmail++;
-                    button1_Click(null, null);
+                    buttonSend_Click(null, null);
                     
                 }
             }*/
@@ -363,7 +363,7 @@ namespace WindowsFormsApp5
 
             else if (dateTimePicker1.Value == DateTime.Now)
             {
-                button1_Click(null, null);
+                buttonSend_Click(null, null);
                 timer1.Stop();
                 demSoLanGuiEmail++;
 

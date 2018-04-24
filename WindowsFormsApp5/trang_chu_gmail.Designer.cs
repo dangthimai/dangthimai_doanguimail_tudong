@@ -32,7 +32,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonSend = new System.Windows.Forms.Button();
             this.contextMenuStripcolor = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.foregroundToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.backgroundToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -115,17 +115,17 @@
             this.label4.TabIndex = 3;
             this.label4.Text = "content:";
             // 
-            // button1
+            // buttonSend
             // 
-            this.button1.ContextMenuStrip = this.contextMenuStripcolor;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(630, 585);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(128, 42);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "send";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.buttonSend.ContextMenuStrip = this.contextMenuStripcolor;
+            this.buttonSend.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSend.Location = new System.Drawing.Point(630, 585);
+            this.buttonSend.Name = "buttonSend";
+            this.buttonSend.Size = new System.Drawing.Size(128, 42);
+            this.buttonSend.TabIndex = 4;
+            this.buttonSend.Text = "send";
+            this.buttonSend.UseVisualStyleBackColor = true;
+            this.buttonSend.Click += new System.EventHandler(this.buttonSend_Click);
             // 
             // contextMenuStripcolor
             // 
@@ -537,7 +537,7 @@
             this.Controls.Add(this.body);
             this.Controls.Add(this.to);
             this.Controls.Add(this.from);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonSend);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -564,7 +564,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonSend;
         private System.Windows.Forms.TextBox from;
         private System.Windows.Forms.TextBox to;
         private System.Windows.Forms.TextBox body;
