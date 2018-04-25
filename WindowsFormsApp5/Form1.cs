@@ -58,8 +58,7 @@ namespace WindowsFormsApp5
                 
             
             
-            //fm.ShowDialog();
-            //this.Show();
+            
 
             login();
            
