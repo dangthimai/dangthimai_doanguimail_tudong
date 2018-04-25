@@ -154,12 +154,7 @@ namespace WindowsFormsApp5
 
 
 
-            // else
-            //{
-            // comboBox1_SelectedIndexChanged(null,ItemChangedEventArgs );
-            //}
-
-            // System.Diagnostics.Debug.WriteLine("Chay lan thu {0}", demSoLanGuiEmail);
+            
 
         }
 
@@ -283,61 +278,6 @@ namespace WindowsFormsApp5
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //timer1.Start();
-           // count = 0;
-            //System.Diagnostics.Debug.WriteLine(" Chuẩn bị gửi thư lần thứ {0}", demSoLanGuiEmail);
-          /*  if (comboBox1.Text == "15 phut")
-            {
-                
-                if (count == 900)
-                {
-                    
-
-                    timer1.Stop();
-                    count = 0;
-                    demSoLanGuiEmail++;
-                    buttonSend_Click(null, null);
-                    
-                }
-
-            }
-            else if (comboBox1.SelectedItem.ToString() == "30 phut")
-            {
-                count++;
-                if (count == 1800)
-                {
-                    timer1.Stop();
-                    count = 0;
-                    demSoLanGuiEmail++;
-                    buttonSend_Click(null, null);
-                   
-                }
-
-            }
-            else if (comboBox1.SelectedItem.ToString() == "45 phut")
-            {
-                count++;
-                if (count == 2700)
-                {
-                    timer1.Stop();
-                    count = 0;
-                    demSoLanGuiEmail++;
-                    buttonSend_Click(null, null);
-                    
-                }
-            }
-            else if (comboBox1.SelectedItem.ToString() == "60 phut")
-            {
-                count++;
-                if (count == 3600)
-                {
-                    timer1.Stop();
-                    count = 0;
-                    demSoLanGuiEmail++;
-                    buttonSend_Click(null, null);
-                    
-                }
-            }*/
             
 
 
