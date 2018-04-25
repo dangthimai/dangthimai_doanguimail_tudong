@@ -152,10 +152,6 @@ namespace WindowsFormsApp5
                 }
             }
 
-
-
-            
-
         }
 
        // su kien gui mail
@@ -298,9 +294,7 @@ namespace WindowsFormsApp5
             {
                 MessageBox.Show(" thời gian cài đạt đã qua. vui lòng kiểm tra lai");
             }
-
-
-
+            
             else if (dateTimePicker1.Value == DateTime.Now)
             {
                 buttonSend_Click(null, null);
