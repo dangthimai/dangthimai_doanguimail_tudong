@@ -294,7 +294,12 @@ namespace WindowsFormsApp5
             {
                 MessageBox.Show(" thời gian cài đạt đã qua. vui lòng kiểm tra lai");
             }
-            
+            // cho nay em nghi can 1 vong lap de so sanh gia trij datetimepicker1.value voi datetime.now
+            //cho den khi no bang thi moi gui
+            //neu chi so sanh ngay tu dau thif chac chan su kien gui mail theo datetime se ko duoc dien ra
+            // do truong hop nay can chay chuong trinh de kiem chung mat rat nhieu tg nen em chi suy theo logic ma chua duoc kiem chung
+            //con cac u kien tu dong khac da duoc kiem chung va chay dung
+            //em se tim hieu va hoan chinh datetimepicker ngay khi co the aj.
             else if (dateTimePicker1.Value == DateTime.Now)
             {
                 buttonSend_Click(null, null);
