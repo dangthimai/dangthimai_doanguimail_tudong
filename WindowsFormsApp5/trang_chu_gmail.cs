@@ -284,7 +284,7 @@ namespace WindowsFormsApp5
 
             private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
-           // timer1.Start();
+            timer1.Start();
            // DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss");
             DateTime Now = DateTime.Now;
              dateTimePicker1.Format = DateTimePickerFormat.Custom;
@@ -293,6 +293,9 @@ namespace WindowsFormsApp5
             if (dateTimePicker1.Value < DateTime.Now)
             {
                 MessageBox.Show(" thời gian cài đạt đã qua. vui lòng kiểm tra lai");
+                
+               // dateTimePicker1.Format = DateTimePickerFormat.Custom;
+               // dateTimePicker1.CustomFormat = "dd-MM-yyy hh:mm:ss";
             }
             // cho nay em nghi can 1 vong lap de so sanh gia trij datetimepicker1.value voi datetime.now
             //cho den khi no bang thi moi gui
@@ -300,6 +303,21 @@ namespace WindowsFormsApp5
             // do truong hop nay can chay chuong trinh de kiem chung mat rat nhieu tg nen em chi suy theo logic ma chua duoc kiem chung
             //con cac u kien tu dong khac da duoc kiem chung va chay dung
             //em se tim hieu va hoan chinh datetimepicker ngay khi co the aj.
+            else if(dateTimePicker1.Value> DateTime.Now)
+          {
+                while (DateTime.Now<dateTimePicker1.Value)
+                {
+                    DateTime a = DateTime.Now;
+                
+                    
+                    if (dateTimePicker1.Value == a)
+                    {
+                        buttonSend_Click(null, null);
+                        timer1.Stop();
+                        demSoLanGuiEmail++;
+                    }
+                }//tai sao co vong while de kt dieu kien chuong trinh lại bị đơ luôn...
+            }
             else if (dateTimePicker1.Value == DateTime.Now)
             {
                 buttonSend_Click(null, null);
